@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewData["Title"] = "Who are you?";
+}
+
+<div class="hero-unit">
+    <h1>Who are you?</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <a asp-controller="Account" asp-action="LoginPicker" asp-route-returnurl="@ViewData["ReturnUrl"]" asp-route-homeTown="LasVegas" asp-route-name="Chriss Angel">
+            <img src="~/images/ChrissAngel.jpg" alt="Chriss Angel" title="Chriss Angel" />
+        </a>
+    </div>
+    <div class="col-md-4">
+        <a asp-controller="Account" asp-action="LoginPicker" asp-route-returnurl="@ViewData["ReturnUrl"]" asp-route-homeTown="Seattle" asp-route-name="Scott Guthrie">
+            <img src="~/images/ScottGu.jpg" alt="Scott Guthrie" title="Scott Guthrie" />
+        </a>
+    </div>
+    <div class="col-md-4">
+        <a asp-controller="Account" asp-action="LoginPicker" asp-route-returnurl="@ViewData["ReturnUrl"]" asp-route-homeTown="Ireland" asp-route-name="Barry Dorrans" asp-route-cowboyHat="true">
+            <img src="~/images/Me.jpg" alt="Barry Dorrans" title="Barry Dorrans" />
+        </a>
+    </div>
+</div>
